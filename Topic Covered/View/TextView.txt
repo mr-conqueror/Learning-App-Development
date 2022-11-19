@@ -1,0 +1,7 @@
+Some functions:
+
+textIsSelectable-> we can select and copy the text
+
+textColorHighLight-> when we select a text then there will be a color
+
+textAllCaps-> (true) All the texts will be Capital

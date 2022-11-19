@@ -1,0 +1,31 @@
+Theory::::::::
+ListView is a viewgroup that can display a list of scrollable items.
+Widely used and very powerful component in android.
+Each of the item in listview is clickable.
+
+First of all we need data source to add data  in listView
+##Listview   <- Adapter <-   data source[] (string,array,array List) 
+
+#Adapter serves as bridge between Listview and data source.
+Two adapters.
+I.  Array adapter [single item]
+2. base adapter [multiple item]
+Adapter pulls the data from the source and convert into a view
+Then set the view into ListView/GridView/Spinner
+
+Creating a listView::::::
+
+Firstly, create a listView;
+ListView Properties:
+listSelector
+Divider
+dividerHeight
+Secondly, Add resources for ListView;
+Create  resources;
+Get the resources in the java class;
+String [] s = getResources.getStringArray(R.array.bla);
+Create a view.
+The resources will be converted into a view;
+Now create a adapter to store the view into ListView;
+ArrayAdapter<String> obj = new ArrayAdpater<String>(this,R.layout.view,R.id.viewid,string name);
+ListView.setAdapter(adapter);

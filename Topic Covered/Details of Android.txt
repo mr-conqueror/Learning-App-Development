@@ -1,0 +1,8 @@
+#What is android?
+Android is a mobile operating system developed by Google, based on the Linux
+Kernel.
+
+#History of android
+Initially developed by Android inc.., which Google bought in 2005, Android was unveiled in 2007.
+Android is the nickname of ANDY RUBIN given by coworkers.
+In 2008, HTC launched the first android mobile.

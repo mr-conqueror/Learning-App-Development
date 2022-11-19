@@ -1,0 +1,48 @@
+Create a class and pass the strings as a parameter;
+
+Example:
+CustomAdapter customAdapter = new CustomAdapter(this,s1,s2);
+ListView.setAdapter(customAdapter);
+
+Inside the CustomAdapter.java file:
+
+class CustomAdapter extends BaseAdapter{
+	
+//take the parameters here
+
+String[] s1, s2;
+Context context; //receive the activity
+LayoutInflater infalter;//convert xml file into view
+
+//constructor to receive the parameters
+
+ CustomAdapter(Context context,String[] s1, String[] s2)
+    {
+        this.context = context;
+        this.s1 = s1;
+        this.s2 = s2;
+    }
+
+//Change the return value
+ public int getCount() {
+        return s1.length;
+    }
+
+//Return the view from getView function
+
+ public View getView(int i, View view, ViewGroup viewGroup)
+{
+	if(view == null)
+	{
+	 inflater = context.getSystemService(Contex.LAYOUT_INFLATER_SERVICE);
+	 view = inflater.inflate(R.layout.view1,viewGroup,false);
+	}
+introduce the textView; txtView 1, 2;
+
+txtView1.setText(s1[i]);
+txtView2.setText(s2[i]);
+
+return view;
+}
+	
+	

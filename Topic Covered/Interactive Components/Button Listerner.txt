@@ -1,0 +1,3 @@
+To make the button interactable.
+
+button.setOnClickListener(new view.onClickListener()
